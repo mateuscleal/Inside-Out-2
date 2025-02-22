@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(145deg, #4a90e2, #003c8f);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #334EAC;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #a6c8ff;
+}
+
+.elementocurvado svg {
+    fill: #334EAC;
+}
+
+.elemento h1 {
+    color: #4a90e2;
+}
+
+.elemento p {
+    color: #333;
+}
+

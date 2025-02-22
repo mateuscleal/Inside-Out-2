@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divertidamente</title>
+    <link rel="stylesheet" href="./styles/style_global.css">
+    <link rel="stylesheet" href="./styles/style_carousel.css">
+    <link rel="stylesheet" href="./styles/style_responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Divertidamente</h1>
+            <ul>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#characters">Personagens</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>Sobre o Filme</h2>
+        <p>Divertidamente (Inside Out) é um filme de animação da Pixar que explora as emoções de uma menina chamada Riley enquanto ela enfrenta mudanças em sua vida. Suas emoções - Alegria, Tristeza, Raiva, Medo e Nojinho - trabalham juntas para guiá-la.</p>
+    </section>
+
+    <section id="characters">
+        <h2>Personagens</h2>
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="character" id="alegria">
+                    <h3>Alegria</h3>
+                    <p>A emoção otimista e enérgica que guia Riley para a felicidade.</p>
+                </div>
+                <div class="character" id="tristeza">
+                    <h3>Tristeza</h3>
+                    <p>A emoção melancólica, mas crucial para o equilíbrio emocional de Riley.</p>
+                </div>
+                <div class="character" id="raiva">
+                    <h3>Raiva</h3>
+                    <p>Explosivo e direto, ele protege Riley de tudo! Principalmente de injustiças.</p>
+                </div>
+                <div class="character" id="medo">
+                    <h3>Medo</h3>
+                    <p>Cauteloso demias, ele mantém Riley segura de perigos.</p>
+                </div>
+                <div class="character" id="nojinho">
+                    <h3>Nojinho</h3>
+                    <p>Elegante e crítica, ajuda Riley a evitar coisas desagradáveis.</p>
+                </div>
+                <div class="character" id="inveja">
+                    <h3>Inveja</h3>
+                    <p>Um sentimento complicado que reflete o desejo de ter o que outra pessoa possui.</p>
+                </div>
+            </div>
+            <button class="carousel-button prev">&#8249;</button>
+            <button class="carousel-button next">&#8250;</button>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Galeria</h2>
+        <div class="gallery">
+            <img src="./imagens/alegria.jpg" alt="Alegria">
+            <img src="./imagens/tristeza.jpg" alt="Tristeza">
+            <img src="./imagens/raiva.jpg" alt="Raiva">
+            <img src="./imagens/medo.jpg" alt="Medo">
+            <img src="./imagens/nojinho.jpg" alt="Nojinho">
+            <img src="./imagens/inveja.jpg" alt="Inveja">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <form id="contact-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Divertidamente. Todos os direitos reservados a Dra Keise Karol! :).</p>
+    </footer>
+
+    <script src="./scripts/gallery_script.js"></script>
+    <script src="./scripts/carousel_script.js"></script>
+    <script src="./scripts/contact_form_script.js"></script>
+</body>
+</html>

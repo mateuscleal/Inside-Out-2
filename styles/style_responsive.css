@@ -1,0 +1,41 @@
+@media (max-width: 1200px) {
+    .carousel .character {
+        flex: 0 0 25%; /* 4 itens visíveis */
+    }
+}
+
+@media (max-width: 992px) {
+    .carousel .character {
+        flex: 0 0 33.33%; /* 3 itens visíveis */
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel .character {
+        flex: 0 0 50%; /* 2 itens visíveis */
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel .character {
+        flex: 0 0 65%; /* 1 item visível */
+    }
+
+    section {
+        padding: 1em;
+    }
+}

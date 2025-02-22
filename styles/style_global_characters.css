@@ -1,0 +1,79 @@
+/* Estilo básico para o body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.main {
+    position: relative;
+    text-align: center;
+}
+
+.elemento {
+    margin: 2em auto;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    max-width: 900px;
+}
+
+.elemento h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+}
+
+.elemento p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.versiculo {
+    display: block;
+    font-size: 1rem;
+    font-style: italic;
+    color: #555;
+}
+
+/* Estilo do footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9rem;
+}
+
+/* Estilo responsivo global */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header nav a {
+        font-size: 0.9rem;
+    }
+
+    .elemento h1 {
+        font-size: 2rem;
+    }
+
+    .elemento p {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 1em;
+    }
+}
+
