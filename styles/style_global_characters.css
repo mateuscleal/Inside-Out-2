@@ -7,6 +7,30 @@ body {
     color: #333;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+
+nav h1 {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -56,14 +80,6 @@ footer {
 
 /* Estilo responsivo global */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    header nav a {
-        font-size: 0.9rem;
-    }
-
     .elemento h1 {
         font-size: 2rem;
     }
@@ -74,6 +90,32 @@ footer {
 
     .container {
         padding: 1em;
+    }
+
+    header {
+        text-align: left;
+    }
+
+    header h1 {
+        margin-bottom: 2.5rem;
+    }
+    
+    header nav a {
+        margin: 0;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
     }
 }
 
