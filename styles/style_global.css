@@ -53,8 +53,13 @@ section {
 }
 
 #characters {
-    height: 300px;
+    height: 250px;
 }
+
+h2 {
+    color: white; /* Cor do texto */
+}
+
 
 #gallery .gallery {
     display: grid;
@@ -72,11 +77,13 @@ section {
 form {
     max-width: 400px;
     margin: 0 auto;
+    align-items: center;
 }
 
 form label {
     display: block;
     margin-bottom: 0.5em;
+    color: white;
 }
 
 form input, form textarea, form button {
@@ -92,6 +99,10 @@ form button {
     color: white;
     font-weight: bold;
     cursor: pointer;
+}
+
+.contact {
+    align-items: center;
 }
 
 footer {
