@@ -1,17 +1,3 @@
-// const contactForm = document.getElementById('contact-form');
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     contactForm.addEventListener('submit', (event) => {
-//         event.preventDefault(); 
-//         const name = document.getElementById('name').value;
-//         const email = document.getElementById('email').value;
-//         const message = document.getElementById('message').value;
-
-//         alert(`Obrigado por sua mensagem, ${name}! Responderemos em breve no e-mail: ${email}`);
-//         contactForm.reset();
-//     });
-// });
-
 const contactForm = document.getElementById('contact-form');
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -21,18 +7,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const email = document.getElementById('email').value;
         const message = document.getElementById('message').value;
 
-        // Configuração do EmailJS
         emailjs.init({
-            publicKey: 'seu ID',
-        }); // Substitua com seu ID de usuário
+            publicKey: 'DdilfkIvz8U1LWpT8',
+        });
 
         const templateParams = {
             name: name,
             notes: message,
           };
 
-        // Enviar o e-mail
-        emailjs.send('ID_EMAIL', 'ID_template', templateParams)
+        emailjs.send('service_qdx5hpd', 'template_47xb1xy', templateParams)
         .then(function (response) {
             alert(`Obrigado por sua mensagem, ${name}! Responderemos em breve no e-mail: ${email}`);
             contactForm.reset();
